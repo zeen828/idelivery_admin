@@ -196,6 +196,8 @@
     git fetch origin
     git checkout -b <branch_name>
     # 在 checkout 命令給定 -b 參數執行，可以同時建立分支和切換。
+    git checkout <branch_name>
+    切換分支
     
     #删除本地分支
     git branch -d branch_name
@@ -213,6 +215,9 @@
     
     git reset --hard HEAD
     還原
+
+    git checkout <file>
+    還原單一檔案
 
     git checkout dd5302bcbd1dcd4b77ca84eabe9bac838b4fa0af
     切到某個版號(透過git log查)，要返回就切回主線
