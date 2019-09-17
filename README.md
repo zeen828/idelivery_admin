@@ -198,29 +198,33 @@
     # 在 checkout 命令給定 -b 參數執行，可以同時建立分支和切換。
     git checkout <branch_name>
     切換分支
-    
+
     #删除本地分支
     git branch -d branch_name
-    
-    git checkout issue1 
+
     # 切換到 issue1 分支。
+    git checkout issue1 
     # Switched to branch 'issue1'
     
+    #還原回主支線
     git reset --hard origin/master
-    還原回主支線
     
+    #還原到某個版本
     git log
     git reset --hard commit ID
-    還原到某個版本
     
+    #還原到某個版本(推)
+    git log --oneline
+    git reset e12d8ef^
+    
+    #還原最後的commit
     git reset --hard HEAD
-    還原
 
+    #還原單一檔案
     git checkout <file>
-    還原單一檔案
 
-    git checkout dd5302bcbd1dcd4b77ca84eabe9bac838b4fa0af
     切到某個版號(透過git log查)，要返回就切回主線
+    git checkout dd5302bcbd1dcd4b77ca84eabe9bac838b4fa0af
 
     <Fetch>
     執行 pull，遠端數據庫的內容會自動合併。但是，有時候只是想確認遠端數據庫的內容卻不是真的想合併，在這種情況下，請使用 fetch。
@@ -231,6 +235,10 @@
     git commit -m "first commit"
     git remote add origin https://will_lu@bitbucket.org/damaiapp/idelivery_www.git
     git push -u origin master
+        OR
+    git remote add origin git@bitbucket.org:rainy820605/laadmin.git
+    git push -u origin master
+
 
 # 小抄::資料庫備份
     備份
