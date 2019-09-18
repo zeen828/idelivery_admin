@@ -275,6 +275,9 @@
     tail -f file.log
     grep -r 'DB_MEMBER_HOST' /var/www/testing/*
 
+#### 查檔案用
+    find /目錄 -name "*.css"
+
 # 小抄windows 10 mklink
 需要以系統管理員身分執行CMD才能執行
 
