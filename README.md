@@ -220,6 +220,9 @@
     #還原最後的commit
     git reset --hard HEAD
 
+    #查看檔案差異
+    git diff <file>
+
     #還原單一檔案
     git checkout <file>
 
