@@ -202,6 +202,9 @@
     #删除本地分支
     git branch -d branch_name
 
+    #刪除服務器上已被刪除遠端分支
+    git remote prune origin
+
     # 切換到 issue1 分支。
     git checkout issue1 
     # Switched to branch 'issue1'
