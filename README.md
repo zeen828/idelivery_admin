@@ -285,7 +285,9 @@
     find /目錄 -name "*.css"
 
 #### CentOS(改系統提示)
-##### 修改設定檔
+##### 系統設定檔
+vim /etc/bashrc
+##### 修改個人設定檔
 vim ~/.bashrc
 
     export PS1="[\[\e[36m\]\u\[\e[m\]@\[\e[33m\]\[WU_TEST]\[\e[m\]\[[\e[1;31m\]\w\[\e[m\]]\e[1;32m\][\A\[\e[m\]]\[\e[31m\]\`parse_git_branch\`\[\e[m\]$ "
