@@ -265,8 +265,8 @@
     sudo /etc/init.d/cron restart
 
 #### 查硬碟空間
-df
-du -h --max-depth=1 /www
+    df
+    du -h --max-depth=1 /www
 
 #### SSH連線
 金鑰權限不能太高
