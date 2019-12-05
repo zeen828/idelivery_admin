@@ -300,15 +300,14 @@ vim ~/.bashrc
 source .bashrc
 
 ##### 查封包用
-yum install ngrep
-ngrep http tcp and port 80 -iqt -W byline
-`
-ngrep   指令
-http    查找字串
-tcp and port 80 塞選風包條件用and串聯
--iqt        i不分大小寫q不顯示非目標封包t時間搓
--W byline   自動換行
-`
+
+    yum install ngrep
+    ngrep http tcp and port 80 -iqt -W byline
+    ngrep   指令
+    http    查找字串
+    tcp and port 80 塞選風包條件用and串聯
+    -iqt        i不分大小寫q不顯示非目標封包t時間搓
+    -W byline   自動換行
 
 ##### 檔案比對
 xxd file_name.txt
