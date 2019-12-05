@@ -310,9 +310,10 @@ source .bashrc
     -W byline   自動換行
 
 ##### 檔案比對
-xxd file_name.txt
-md5sum file_name.txt
-diff -urN file_name_1.txt file_name_2.txt > tmp.txt
+
+    xxd file_name.txt
+    md5sum file_name.txt
+    diff -urN file_name_1.txt file_name_2.txt > tmp.txt
 
 # 小抄windows 10 mklink
 需要以系統管理員身分執行CMD才能執行
