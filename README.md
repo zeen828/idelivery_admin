@@ -107,6 +107,8 @@
 建立(model使用要自己先建立)
 
     php artisan admin:make Company/CompanyController --model=App\Model\idelivery\Company
+    #linux下要\\
+    php artisan admin:make Cartoon/BookController --model=App\\Model\\Cartoon\\Books
 
 # 小抄::Model
 建立
