@@ -301,6 +301,23 @@ vim ~/.bashrc
 ##### 重讀設定檔
 source .bashrc
 
+##### 查服務用
+
+    ps aux | grep java
+
+##### 查檔案
+
+    sudo find / -name php.ini
+
+##### 查詢可安裝包
+
+    yum list | grep redis
+
+##### yum安裝包查系統檔
+
+    rpm -qa | grep php73-php
+    rpm -ql php73-php-fpm | grep etc
+
 ##### 查封包用
 
     yum install ngrep
