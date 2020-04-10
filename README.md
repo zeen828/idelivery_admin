@@ -225,6 +225,9 @@
     #還原最後的commit
     git reset --hard HEAD
 
+    #還原最後的commit上一個
+    git reset --hard ORIG_HEAD
+
     #查看檔案差異
     git diff <file>
 
