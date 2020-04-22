@@ -330,6 +330,8 @@ source .bashrc
     tcp and port 80 塞選封包條件用and串聯
     -iqt        i不分大小寫q不顯示非目標封包t時間搓
     -W byline   自動換行
+    ngrep . tcp and port 80 and ! net 100.120.0.0/16 -iqt -W byline
+    ! net 100.120.0.0/16    排除例外
 
 ##### 檔案比對
 
