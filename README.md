@@ -240,6 +240,12 @@
     <Fetch>
     執行 pull，遠端數據庫的內容會自動合併。但是，有時候只是想確認遠端數據庫的內容卻不是真的想合併，在這種情況下，請使用 fetch。
     
+    #清除本機TAG
+    git tag -d $(git tag)
+    
+    #清除遠端TAG, 但是本機己刪除
+    git ls-remote --tags origin | git show-ref --tags --exclude-existing | awk '{print "git push origin :" $2}'  | sh
+    
 # 小抄::GIT建專案
     git init
     git add .
