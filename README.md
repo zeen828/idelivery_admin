@@ -170,6 +170,34 @@
     php artisan db:seed --class=檔案描述
     php artisan db:seed --class=AdminTableSeeder
 
+# 小抄::Seeder(多筆)
+先建立factory
+php artisan make:factory TestGraphql --model=Post
+編輯欄位型態
+
+建立Seeder
+```php
+<?php
+
+use Illuminate\Database\Seeder;
+
+class TestsSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //
+        factory(App\TestGraphql::class, 50)->create()->each(function ($test) {
+            $test->posts()->save(factory(App\Post::class)->make());
+        });
+    }
+}
+```
+
 # 小抄::Composer
     composer create-project codeigniter/framework 專案目錄
     composer install
