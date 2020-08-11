@@ -172,7 +172,9 @@
 
 # 小抄::Seeder(多筆)
 先建立factory
+```
 php artisan make:factory TestGraphql --model=Post
+```
 編輯欄位型態
 
 建立Seeder
