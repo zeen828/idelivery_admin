@@ -17,7 +17,7 @@
         "league/flysystem-aws-s3-v3": "^1.0",
         "maatwebsite/excel": "~2.1.0",
         "spatie/eloquent-sortable": "^3.4",
-        "tinymce/tinymce": "^4.7"
+        "tinymce/tinymce": "^5.9"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
